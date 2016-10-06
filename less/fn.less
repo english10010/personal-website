@@ -1,0 +1,40 @@
+.item-animation(@z-index,@top,@left,@width,@height){
+  position: absolute;
+  z-index: @z-index;
+  top: @top;
+  left:@left;
+  width: @width;
+  height: @height;
+}
+.div-keep-percentage(@width,@percentage){
+  width: @width;
+  height: 0;
+  padding-bottom: @width * @percentage;
+}
+.div-absolute-middle(@width, @height, @top, @bottom){
+  width: @width;
+  height: @height;
+  margin: auto;
+  position: absolute;
+  top: @top;
+  left: 0;
+  right: 0;
+  bottom: @bottom;
+}
+.radius(@r-top-left, @r-top-right, @r-bottom-right, @r-bottom-left){
+  -webkit-border-radius: @r-top-left, @r-top-right, @r-bottom-right, @r-bottom-left;
+  -moz-border-radius:@r-top-left, @r-top-right, @r-bottom-right, @r-bottom-left;
+  border-radius:@r-top-left, @r-top-right, @r-bottom-right, @r-bottom-left;
+}
+.radius(@r){
+  -webkit-border-radius: @r;
+  -moz-border-radius:@r;
+  border-radius:@r;
+}
+.transition(@property, @duration){
+  -webkit-transition: @property @duration;
+  -moz-transition: @property @duration;
+  -ms-transition: @property @duration;
+  -o-transition: @property @duration;
+  transition: @property @duration;
+}

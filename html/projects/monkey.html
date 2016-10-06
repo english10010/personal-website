@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChenLu</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../build/css/projects/index.css" rel="stylesheet">
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/handlebars/handlebars.js"></script>
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../build/js/public/app.js"></script>
+    <script src="../../build/js/projects/app.js"></script>
+</head>
+
+<body>
+<div class="background_container clearflow" id="background_container">
+    <img id="background1" class="background show-display" src="../../build/images/bg1.jpg">
+    <img id="background2" class="background hide-display" src="../../build/images/bg2.jpg">
+    <img id="background3" class="background hide-display" src="../../build/images/bg3.jpg">
+</div>
+<div class="item_container">
+    <img id="item2" data-top="10" data-left="70" data-speedx="0.03" data-speedy="-0.08" src="../../build/images/cloud2.png">
+    <img id="item1" data-top="5" data-left="350" data-speedx="0.02" data-speedy="-0.04" src="../../build/images/cloud1.png">
+    <img id="monkey" data-top="35" data-left="260" data-speedx="0.05" data-speedy="0.05" src="../../build/images/Monkey.png">
+    <img id="text" data-top="35" data-left="160" data-speedx="0.08" data-speedy="0.05" src="../../build/images/text.png">
+</div>
+<div class="background_container">
+    <div class="switcher">
+        <img data-toggle="tooltip" title="Try Drag!" src="../../build/images/swither.png">
+        <div data-action="test" data-level="1" class="slider transition-all"></div>
+    </div>
+    <div class="buttons">
+        <button class="bg-orange">Project Introduction</button>
+        <button class="bg-green"></button>
+    </div>
+</div>
+</body>
+</html>

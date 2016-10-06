@@ -1,0 +1,164 @@
+@import "../index";
+
+body {
+  background: none !important;
+}
+
+.wrap {
+  position: relative;
+  width: 600px;
+  margin: 50px auto;
+  .row{
+    margin: 0;
+  }
+  .button{
+    -webkit-appearance: none;
+    border: solid 1px @borderColor;
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    color: @borderColor;
+    .transition(all, .5s);
+    &:hover{
+      background: @borderColor;
+      color: white;
+      box-shadow: 0 0 15px 0 @borderColor;
+    }
+  }
+}
+
+.info_container {
+  width: 40%;
+  height: 50px;
+  border-top: solid 1px @borderColor;
+  border-bottom: solid 1px @borderColor;
+  position: relative;
+  background: url("../../images/infobg.png");
+  .border {
+
+  }
+}
+
+.nav {
+  border-left: solid 1px @borderColor;
+  border-right: solid 1px @borderColor;
+  padding-top: 20px;
+  width: 200px;
+  height: 106px;
+  background: none;
+  display: inline-block;
+  position: relative;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  margin-top: 59px;
+  margin-right: -1px;
+  >span{
+    color: deeppink;
+  }
+  &:hover, &.active{
+    background: white;
+    text-decoration: none;
+    color: #0351a8;
+    &::before{
+      background: url("../../images/triangle-up-hover.png");
+    }
+    &::after{
+      background: url("../../images/triangle-down-hover.png");
+    }
+  }
+  &::before{
+    content: "";
+    width: 200px;
+    height: 60px;
+    background: url("../../images/triangle-up.png");
+    position: absolute;
+    left: 0;
+    top: -60px;
+  }
+  &::after{
+    content: "";
+    width: 200px;
+    height: 60px;
+    background: url("../../images/triangle-down.png");
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+  }
+}
+
+.a0 {
+  margin-left: 100px;
+}
+
+.a1 {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 740px) {
+  .wrap{
+    width: 300px;
+    margin-top: 20px;
+    .button{
+      width: auto !important;
+    }
+  }
+  .nav {
+    border-left: solid 1px @borderColor;
+    border-right: solid 1px @borderColor;
+    padding-top: 15px;
+    width: 100px;
+    height: 58px;
+    background: none;
+    display: inline-block;
+    position: relative;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    margin-top: 29px;
+    margin-right: -1px;
+    >span{
+      color: deeppink;
+    }
+    &:hover,&.active{
+      &::before, &::after{
+        background-size: 100% 100%;
+      }
+    }
+    &::before{
+      content: "";
+      width: 100px;
+      height: 30px;
+      background: url("../../images/triangle-up-mb.png");
+      position: absolute;
+      left: 0;
+      top: -30px;
+    }
+    &::after{
+      content: "";
+      width: 100px;
+      height: 30px;
+      background: url("../../images/triangle-down-mb.png");
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+    }
+  }
+  .a0 {
+    margin-left: 50px;
+  }
+}
+
+.disappear{
+  opacity: 0;
+  cursor: default;
+}
